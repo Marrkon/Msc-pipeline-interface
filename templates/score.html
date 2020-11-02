@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+{% extends "layout-without-footer.html" %}
+{% block content %}
+
+<body>
+   
+    <div class="container text-center" style="margin-top: 10%;">
+        <h1>Calculation Finished!</h1>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 10%;">
+            <div class="col-md-6">
+                <h1>Question:</h1>
+
+                {% if not question %}
+                <p>Not Found</p>
+                {% endif %}
+
+                {% if question %}
+                <p>{{ question }}</p>
+                {% endif %}
+
+            </div>
+            <div class="col-md-6">
+                <h1>Answer:</h1>
+
+                {% if not answer %}
+                <p>We are sorry :( Answer coudn't be found</p>
+                {% endif %}
+
+                {% if answer %}
+                <p>{{answer}}</p>
+                {% endif %}
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="margin-top: 10%;"><a class="btn btn-primary btn-lg ml-auto" role="button" href={{ url_for('index') }}>Back to the main menu</a></div>
+
+{% endblock %}

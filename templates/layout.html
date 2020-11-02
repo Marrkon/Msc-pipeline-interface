@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Math Question Answering</title>
+    <meta name="description" content="math SAT practice exams solver">
+    <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="../static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/assets/css/Animated-Typing-With-Blinking.css">
+    <link rel="stylesheet" href="../static/assets/css/Highlight-Blue.css">
+    <link rel="stylesheet" href="../static/assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../static/assets/css/multi-step-form.css">
+    <link rel="stylesheet" href="../static/assets/css/Wave-update.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand" href={{ url_for('index') }} style="font-size: 17px;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" href={{ url_for('examples') }} role="button" ">Examples</a></div>
+        </div>
+    </nav>
+
+    {% block content %}
+
+        
+    {% endblock %}
+
+
+    <footer class="footer bg-light" style="/*margin-top: 30%;*/bottom: 0;">
+        <div class="container" style="/*bottom: 0;*/">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <p class="text-muted small mb-4 mb-lg-0">© MK 2020. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"></a></li>
+                        <li class="list-inline-item"><a href="#"></a><a href="#"></a><a href="#"></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/marcin-konieczny-879502152/"><i class="fa fa-linkedin fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../static/ts/js/jquery.min.js"></script>
+    <script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../static/assets/js/bs-init.js"></script>
+    <script src="../static/assets/js/Animated-Typing-With-Blinking.js"></script>
+</body>
+
+</html>
