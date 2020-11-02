@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+{% extends "layout-without-footer.html" %}
+{% block content %}
+
+
+    <div id="wrapper">
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content" style="margin-top: 10%;">
+                <div class="container-fluid">
+                    <div class="text-center mt-5">
+                        <div class="error mx-auto" data-text="404">
+                            <p class="m-0" style="font-size: 52px;">404</p>
+                        </div>
+                        <p class="text-dark mb-5 lead" style="font-size: 55px;">Page Not Found</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" style="margin-top: 10%;"><a class="btn btn-primary btn-lg ml-auto" role="button" href={{ url_for('index') }}> Back to the main menu </a></div>
+
+{% endblock %}
