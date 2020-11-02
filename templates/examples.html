@@ -1,42 +1,31 @@
-<!DOCTYPE html>
-
 {% extends "layout.html" %}
 {% block content %}
 
-<section class="showcase">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-lg-7 col-xl-8 order-lg-2 text-white showcase-img" style="background-image: url('../static/assets/img/mgr-panel.jpg');"><span></span></div>
-            <div class="col-lg-5 col-xl-4 my-auto order-lg-1 showcase-text">
-                <h2 style="font-family: Montserrat;font-size: 30px;">Example 1&nbsp;</h2>
-                <p class="lead mb-0" style="font-family: Montserrat;">SAT test 2</p>
-            </div>
-        </div><br>
-        <div class="row no-gutters">
-            <div class="col-lg-7 col-xl-8 order-lg-2 text-white showcase-img" style="background-image: url('../static/assets/img/mgr-panel.jpg');"><span></span></div>
-            <div class="col-lg-5 col-xl-4 my-auto order-lg-1 showcase-text">
-                <h2 style="font-family: Montserrat;font-size: 30px;">Example 2&nbsp;</h2>
-                <p class="lead mb-0" style="font-family: Montserrat;">SAT test 2&nbsp;</p>
-            </div>
-        </div><br>
-        <div class="row no-gutters">
-            <div class="col-lg-7 col-xl-8 order-lg-2 text-white showcase-img" style="background-image: url(&quot;../static/assets/img/mgr-panel.jpg&quot;);"><span></span></div>
-            <div class="col-lg-5 col-xl-4 my-auto order-lg-1 showcase-text">
-                <h2 style="font-family: Montserrat;font-size: 30px;">Example 3&nbsp;</h2>
-                <p class="lead mb-0" style="font-family: Montserrat;font-size: 20px;">SAT test 3<br></p>
+<div class="article-clean">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                <div class="intro">
+                    <h3 class="text-center" style="margin-top: 3%;font-family: Montserrat;color: rgb(0,0,0);font-size: 27px;/*background: rgba(23,23,2,0.1);*/">Examples of Math Question Answering</h3>
+                </div>
+                <div class="text" style="font-family: Montserrat;">
+                    <h2 style="font-family: Montserrat;text-align: center;font-size: 26px;">Page 1: Inserting the equation&nbsp;</h2>
+                    <figure><img class="figure-img" src="../static/assets/img/question_before.png"></figure>
+                    <p>Welcome page with filled quesiton and choices.</p>
+                </div>
+                <div class="text">
+                    <h2 style="font-family: Montserrat;text-align: center;font-size: 26px;">Page 2: Checking the results&nbsp;</h2>
+                    <figure><img class="figure-img" src="../static/assets/img/question_after.png"></figure>
+                    <p style="font-family: Montserrat;"> Result page - plot presents chance of correctness of all the provided answers.</p>
+                </div>
             </div>
         </div>
     </div>
-</section>
-    <!-- <div class="highlight-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center"></h2>
-                <p class="text-center">Were the examples helpful?</p>
-            </div>
-            <div class="buttons"><a class="btn btn-primary" role="button" href="#">Yes&nbsp;</a><button class="btn btn-light" type="button">No</button></div>
-        </div>
-    </div> -->
+</div>
 
+<script src="../static/assets/js/jquery.min.js"></script>
+<script src="../static/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../static/assets/js/Animated-Typing-With-Blinking.js"></script>
+   
 
 {% endblock %}

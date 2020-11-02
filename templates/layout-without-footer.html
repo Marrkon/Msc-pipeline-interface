@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Math Question Answering</title>
-    <meta name="description" content="math SAT practice exams solver">
+    <meta name="description" content="SAT Math Test solver">
+
+
     <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="../static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/assets/css/Article-Clean.css">
     <link rel="stylesheet" href="../static/assets/css/Animated-Typing-With-Blinking.css">
     <link rel="stylesheet" href="../static/assets/css/Highlight-Blue.css">
     <link rel="stylesheet" href="../static/assets/css/Highlight-Clean.css">
@@ -20,11 +24,13 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand bg-light navigation-clean" style="height: 72px;">
-        <div class="container"><a class="navbar-brand" href={{ url_for('index') }} style="font-size: 17px;font-family: Montserrat;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+        <div class="container"><a class="navbar-brand" href={{ url_for('index') }} style="font-size: 18px;font-family: Montserrat;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
             <div class="collapse navbar-collapse"
-                id="navcol-1" style="height: 48px;"><a class="btn btn-primary btn-lg ml-auto" role="button" href={{ url_for('examples') }} style="font-family: Montserrat;">Examples</a></div>
+                id="navcol-1" style="height: 48px;"><a class="btn btn-primary btn-sm ml-auto" role="button" href={{ url_for('examples') }} style="font-family: Montserrat;">Examples</a></div>
         </div>
     </nav>
+
+
     {% block content %}
 
         
