@@ -11,15 +11,14 @@
                     <h1 class="mb-5" style="color: rgb(255,255,255);font-size: 45px;">Math SAT question solver</h1>
                 </div>
                 <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
-                    <form>
+                    <form method="POST" action="/loading_answer" enctype="multipart/form-data" >
                         <div class="form-row d-md-flex justify-content-md-center">
-                            <div class="col-12 col-md-9 offset-xl-0 mb-2 mb-md-0"><textarea class="form-control form-control-lg" rows="5" placeholder="Enter the text of the task"></textarea></div>
+                            <div class="col-12 col-md-9 offset-xl-0 mb-2 mb-md-0"><textarea name="question_field" class="form-control form-control-lg" rows="5" placeholder="Enter the text of the task"></textarea></div>
                         </div>
-                    </form>
-                </div><br>
-                <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
-                    <form>
-                        <div class="form-row d-md-flex justify-content-md-center">
+                    
+                        </div><br>
+                            <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
+                            <div class="form-row d-md-flex justify-content-md-center">
                             <div class="col-12 col-md-7 col-xl-5 offset-xl-0 d-xl-flex justify-content-xl-end align-items-xl-center"><button class="btn btn-primary btn-block btn-lg d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-top: 3%;">Calculate</button></div>
                         </div>
                     </form>
@@ -27,7 +26,7 @@
             </div>
         </div>
     </header>
-    <div class="highlight-clean">
+    <!-- <div class="highlight-clean">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center"></h2>
@@ -35,6 +34,6 @@
             </div>
             <div class="buttons"><a class="btn btn-primary" role="button" href="#">Yes&nbsp;</a><button class="btn btn-light" type="button">No</button></div>
         </div>
-    </div>
+    </div> -->
    
  {% endblock %}
