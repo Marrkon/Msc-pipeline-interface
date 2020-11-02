@@ -5,21 +5,38 @@
 
 <body>
    
-    <div class="container text-center d-xl-flex justify-content-xl-start" style="margin-top: 10%;text-align: left;">
+       <div class="container text-center d-xl-flex justify-content-xl-center" style="margin-top: 10%;">
         <h1 class="d-xl-flex justify-content-xl-center" style="font-family: Montserrat;font-size: 32px;">Calculation Finished!</h1>
     </div>
     <div class="container">
         <div class="row d-xl-flex justify-content-xl-center" style="margin-top: 10%;">
             <div class="col-md-6">
                 <h1 style="font-family: Montserrat;">Question:</h1>
-                <p style="font-family: Montserrat;">Paragraph</p>
+
+                {% if not question %}
+                <p style="font-family: Montserrat;">Empty question</p>
+                {% endif %}
+
+                {% if question %}
+                <p style="font-family: Montserrat;">{{ question }}</p>
+                {% endif %}
             </div>
             <div class="col-md-6">
                 <h1 style="font-family: Montserrat;">Answer:</h1>
-                <p style="font-family: Montserrat;">Not Found</p>
+
+                {% if not answer %}
+                <p style="font-family: Montserrat;">We are sorry :( Answer coudn't be found</p>
+                {% endif %}
+
+                {% if answer %}
+                <p style="font-family: Montserrat;">{{answer}}</p>
+                {% endif %}
+            
             </div>
         </div>
     </div>
+
+
 
     <div class="container text-center" style="margin-top: 10%;"><a class="btn btn-primary btn-lg ml-auto" role="button" href={{ url_for('index') }} style="font-family: Montserrat;">Back to the main menu</a></div>
 
