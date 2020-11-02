@@ -8,6 +8,7 @@
     <meta name="description" content="math SAT practice exams solver">
     <link rel="stylesheet" href="../static/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="../static/assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../static/assets/css/Animated-Typing-With-Blinking.css">
     <link rel="stylesheet" href="../static/assets/css/Highlight-Blue.css">
@@ -18,12 +19,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean" style="height: 72px">
-        <div class="container"><a class="navbar-brand" href={{ url_for('index') }} style="font-size: 17px;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
-            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary btn-lg ml-auto" href={{ url_for('examples') }} role="button" ">Examples</a></div>
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean" style="height: 72px;">
+        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 17px;font-family: Montserrat;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1" style="height: 48px;"><a class="btn btn-primary btn-lg ml-auto" role="button" href="examples.html" style="font-family: Montserrat;">Examples</a></div>
         </div>
     </nav>
-
     {% block content %}
 
         

@@ -3,29 +3,33 @@
 {% extends "layout.html" %}
 {% block content %}
 
-   <header class="masthead text-white text-center" style="background: url('../static/assets/img/bg-water.jpg')center center;background-size: cover;width: auto;padding-bottom: 15%;">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <h1 class="mb-5" style="color: rgb(255,255,255);font-size: 45px;">Math SAT question solver</h1>
-                </div>
-                <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
-                    <form method="POST" action="/loading_answer" enctype="multipart/form-data" >
-                        <div class="form-row d-md-flex justify-content-md-center">
-                            <div class="col-12 col-md-9 offset-xl-0 mb-2 mb-md-0"><textarea name="question_field" class="form-control form-control-lg" rows="5" placeholder="Enter the text of the task"></textarea></div>
-                        </div>
-                    
-                        </div><br>
-                            <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
-                            <div class="form-row d-md-flex justify-content-md-center">
-                            <div class="col-12 col-md-7 col-xl-5 offset-xl-0 d-xl-flex justify-content-xl-end align-items-xl-center"><button class="btn btn-primary btn-block btn-lg d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-top: 3%;">Calculate</button></div>
-                        </div>
-                    </form>
-                </div>
+
+<header class="masthead text-white text-center" style="background: url('../static/assets/img/bg-water.jpg')center center;background-size: cover;width: auto;padding-bottom: 15%;">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <h5 class="mb-5" style="color: rgb(255,255,255);/*background-color: rgba(38,143,255,.7);*/font-size: 33px;font-family: Montserrat;">Math SAT question solver</h5>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
+                <form method="POST" action="/loading_answer" enctype="multipart/form-data" >
+                    <div class="form-row d-md-flex justify-content-md-center">
+                        <div class="col-12 col-md-9 offset-xl-0 mb-2 mb-md-0"><textarea name="question_field" class="form-control form-control-lg" rows="5" placeholder="Enter the text of the task" style="font-family: Montserrat;"></textarea></div>
+                    </div>
+                
+            </div><br>
+            <div class="col-md-10 col-lg-8 col-xl-12 offset-xl-1 mx-auto">
+                
+                    <div class="form-row d-md-flex justify-content-md-center">
+                        <div class="col-12 col-md-7 col-xl-5 offset-xl-0 d-xl-flex justify-content-xl-end align-items-xl-center"><button class="btn btn-primary btn-block btn-lg d-xl-flex justify-content-xl-center align-items-xl-center" type="submit" style="margin-top: 3%;font-family: Montserrat;">Calculate</button></div>
+                    </div>
+                </form>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+
+
     <!-- <div class="highlight-clean">
         <div class="container">
             <div class="intro">
