@@ -20,9 +20,9 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand bg-light navigation-clean" style="height: 72px;">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 17px;font-family: Montserrat;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+        <div class="container"><a class="navbar-brand" href={{ url_for('index') }} style="font-size: 17px;font-family: Montserrat;">Math Question Answering</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
             <div class="collapse navbar-collapse"
-                id="navcol-1" style="height: 48px;"><a class="btn btn-primary btn-lg ml-auto" role="button" href="examples.html" style="font-family: Montserrat;">Examples</a></div>
+                id="navcol-1" style="height: 48px;"><a class="btn btn-primary btn-lg ml-auto" role="button" href={{ url_for('examples') }} style="font-family: Montserrat;">Examples</a></div>
         </div>
     </nav>
     {% block content %}
