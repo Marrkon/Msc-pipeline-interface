@@ -87,7 +87,8 @@ def loading_answer():
     question = request.form['question_field']
 
     # Calculate the most possible solution 
-    answer, equation_status = list(np.random.dirichlet(np.ones(5)*1000.,size=1)), True
+    xx = sum(x is not None for x in all_choices)
+    answer, equation_status = list(np.random.dirichlet(np.ones(xx)*1000.,size=1)), True
 
     # Show answer on the screen
     return render_template("score.html", question = question, choices = all_choices, answer = answer, equation_status = equation_status)
