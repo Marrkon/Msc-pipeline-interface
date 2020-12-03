@@ -35,7 +35,7 @@ def score():
 def page_not_found(error):
     return render_template('404.html', title=404), 404
  
- 
+
 def run_transformers(question, choices):
     tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
     model = TFRobertaForMultipleChoice.from_pretrained('roberta-base')
@@ -87,7 +87,7 @@ def loading_answer():
     question = request.form['question_field']
 
     # Calculate the most possible solution 
-    answer, equation_status = solution_pipeline(question, all_choices)
+    answer, equation_status = list(np.random.dirichlet(np.ones(5)*1000.,size=1)), True
 
     # Show answer on the screen
     return render_template("score.html", question = question, choices = all_choices, answer = answer, equation_status = equation_status)
