@@ -6,9 +6,9 @@
 <div class="container" style="margin-top: 5%;">
     <div class="row d-xl-flex justify-content-xl-center" style="/*margin-top: 10%;*/">
         <div class="col-md-12 col-xl-12 calculation_column" style="/*margin-top: -5%;*/">
-                <h1 style="font-family: Montserrat;color: #000000;">Processing successfully finished!</h1>
 
     {% if equation_status == True %}
+                 <h1 style="font-family: Montserrat;color: #000000;">Processing successfully finished!</h1>
 
                     <hr>
                     <h1 style="font-family: Montserrat;color: #7d8285;">Question:</h1>
@@ -78,6 +78,7 @@
     {% endif %}
 
     {% if equation_status == False %}
+    <h1 style="font-family: Montserrat;color: #000000;">Processing finished!</h1>
      <h1 style="font-family: Montserrat;color: #000000;">Unable to solve provided equation !</h1>
     {% endif %}
 

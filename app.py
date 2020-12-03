@@ -1,4 +1,6 @@
 from flask import Flask, request, render_template
+from transformers import RobertaTokenizer, TFRobertaForMultipleChoice
+import tensorflow as tf
 import flask
 
 app = flask.Flask(__name__)
@@ -33,10 +35,27 @@ def score():
 def page_not_found(error):
     return render_template('404.html', title=404), 404
  
+ 
+def run_transformers(question, choices):
+    tokenizer = RobertaTokenizer.from_pretrained('roberta-base')
+    model = TFRobertaForMultipleChoice.from_pretrained('roberta-base')
+    prompt = question
+    choice0 = choices[0]
+    choice1 = choices[1]
+    encoding = tokenizer([[prompt, prompt], [choice0, choice1]], return_tensors='tf', padding=True)
+    inputs = {k: tf.expand_dims(v, 0) for k, v in encoding.items()}
+    outputs = model(inputs)  # batch size is 1
+    # the linear classifier still needs to be trained
+    probs = tf.nn.softmax(outputs.logits)
+    final_probs = list(probs.numpy())[0]
+    print(final_probs)
+    return final_probs
+
+
 ### Calculate score
 # Generate answer from the question or information that answer coudn't be found
 def solution_pipeline(question, choices):
-    result, equation_status = [5,12,8,65,10], True
+    result, equation_status = run_transformers(question, choices), True
 
     # Clear values which are empty
     for idx,val in enumerate(choices):
