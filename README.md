@@ -1,2 +1,2 @@
-# mgr-panel
-Interface for my MSc thesis project
+# MSc thesis panel
+Frontend for MSc 'Math Question Answering' pipeline.
